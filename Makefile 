@@ -1,0 +1,8 @@
+build: reverse_tool.o
+	g++ -Wall -o ./a.out reverse_tool.o
+
+reverse_tool.o 	:reverse_tool.cpp reverse_tool.h
+	g++ -std=c++11 -Wall -g -c reverse_tool.cpp 
+
+clean		: 
+	rm *.o  a.out
